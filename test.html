@@ -1,0 +1,42 @@
+<!DICTYPE html>
+<html>
+    <head>
+        <title>jQuery learning</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+<!--        Script of hide & show-->
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                
+                $("#show").click(function(){
+                    $("p").show();
+                });
+                
+                $("button").click(function(){
+                    $("#div1").load("demo_text.txt");
+                });
+                
+            });
+        
+        </script>
+    </head>
+    <body style="text-align: center; margin-top: 50px">
+    
+        <h2>This is learning curve of jQuery.</h2>
+        <h4>This is a paragraph.</h4>
+        <p>This is another paragraph.</p>
+        <br>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <hr>
+        <div id="div1">
+            <h2>Hi this is jQuery Ajax testing.</h2>
+            
+        </div>
+        <br>
+        <button>Click to load file</button>
+    </body>
+</html>
